@@ -4,6 +4,10 @@ body, html {
     font-family: sans-serif;
     font-size: 20px;
 }
+:root {
+    --text-primary: #f2f0ff;
+    --text-secondary: #a7a2c3;
+  }
 
 a {
     color: inherit;
@@ -95,4 +99,11 @@ canvas#gooey-overlay {
 
 .lil-gui.autoPlace {
     z-index: 999;
+}
+
+.text-primary{
+    color: var(--text-primary);
+}
+.text-secondary{
+    color: var(--text-secondary);
 }
