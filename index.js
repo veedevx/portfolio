@@ -132,3 +132,11 @@ function resizeCanvas() {
     gl.viewport(0, 0, canvasEl.width, canvasEl.height);
     gl.uniform2f(uniforms.u_resolution, canvasEl.width, canvasEl.height);
 }
+
+// CUSTOM CURSOR 
+new kursor({
+    type: 3,
+    removeDefaultCursor: true,
+    color: "#e8e117"
+})
+
