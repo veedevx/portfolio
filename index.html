@@ -7,11 +7,12 @@
     <title>veedevx | Portfolio</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="page">
-        
+
         <main class="scroll-msg">
             <div class="hero-title">creative developer</div>
             <div class="hero-copy">Front-End Developer & Designer</div>
@@ -21,19 +22,42 @@
         </main>
     </div>
     <canvas id="gooey-overlay"></canvas>
-    <div class="text-overlay">
+    <div class="text-overlay" id="overlay">
         <nav>
-            <a href="#" ><img src="./assets/collect-svgrepo-com.svg" alt="homelogo" class="home-logo"></a>
-            <a class="projects" href="#">Projects</a>
+            <a href="#"><img src="./assets/collect-svgrepo-com.svg" alt="homelogo" class="home-logo"></a>
+            <a class="projects" href="#overlay">Projects</a>
             <a href="./about.html" class="about">About</a>
             <a href="mailto:hello@veedevx.in" class="email">hello@veedevx.in</a>
         </nav>
+        <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="proj">
+                            <img src="./assets/2.png" alt="">
+                            <div class="proj-link">
+                                <a href="https://agncy.vercel.app/" target="_blank">visit</a>
+                            </div>
+                        </div>
+                    </li>
 
-        <!-- <p>
-            <a href="https://linkedin.com/in/ksenia-kondrashova/" target="_blank">linkedIn</a> | <a
-                href="https://codepen.io/ksenia-k" target="_blank">codepen</a> | <a
-                href="https://twitter.com/uuuuuulala" target="_blank">twitter (X)</a>
-        </p> -->
+                    <li class="splide__slide">
+                        <div class="proj">
+                            <img src="./assets/1.png" alt="">
+                            <div class="proj-link">
+                                <a href="https://good-food-ten.vercel.app/" target="_blank">visit</a>
+                            </div>
+                        </div>
+
+                    </li>
+
+
+
+
+
+                </ul>
+            </div>
+        </div>
     </div>
 
 
@@ -193,12 +217,15 @@
     <!-- Custom Cursor  -->
     <script src="https://unpkg.com/kursor"></script>
 
+    <!-- SPLIDE -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
     <!-- Main JS  -->
     <script src="./index.js" type="module"></script>
 
 
 
-    
+
 
 </body>
 

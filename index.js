@@ -2,7 +2,6 @@ const canvasEl = document.querySelector("#gooey-overlay");
 const contentEl = document.querySelector(".text-overlay");
 const scrollMsgEl = document.querySelector(".scroll-msg");
 const scrollArrowEl = document.querySelector(".arrow-animated-wrapper");
-
 const devicePixelRatio = Math.min(window.devicePixelRatio, 2);
 
 // HARD-CODED VALUES
@@ -140,3 +139,20 @@ new kursor({
     color: "#e8e117"
 })
 
+
+// SPLIDE
+var splide = new Splide('.splide', {
+    type: 'loop', // This makes it loop infinitely
+  });
+  
+  var bar = splide.root.querySelector('.my-carousel-progress-bar');
+  
+  // Updates the bar width whenever the carousel moves:
+  splide.on('mounted move', function () {
+    var end = splide.Components.Controller.getEnd() + 1;
+    var rate = Math.min((splide.index + 1) / end, 1);
+    bar.style.width = String(100 * rate) + '%';
+  });
+  
+  splide.mount();
+  
